@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"> 
+
+<suite name="slamdunk" verbose="5"> 
+  <test name="slamdunk tests">
+          <groups>
+            <run>
+                <include name="ready"/>
+                <exclude name="toBeFixed"/>
+            </run>
+        </groups> 
+        <packages>             
+            <package name="com.slamdunk.api"/>
+        </packages> 
+   </test> 
+ </suite>
