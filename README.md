@@ -1,6 +1,6 @@
 Slamdunk
 ========
-Slamdunk is a Java library for the Dribbble API(βββeta). Currently this library is in development and will provide basic support activities on Dribbble. Slamdunk has minimal dependencies and is aimed to be easy to use.
+Slamdunk is a Java library for the Dribbble API (βeta). Currently this library is in development and will provide basic support activities on Dribbble. Slamdunk has minimal dependencies and is aimed to be easy to use.
 
 Base URI
 --------
