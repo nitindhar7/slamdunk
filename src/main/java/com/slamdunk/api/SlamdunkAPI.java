@@ -75,12 +75,28 @@ public interface SlamdunkAPI {
 	public JSONObject player(int id);
 	
 	/**
+	 * Returns profile details for a player specified by username
+	 * 
+	 * @param username player username
+	 * @return JSON response
+	 */
+	public JSONObject player(String username);
+	
+	/**
 	 * Returns the most recent shots for the player specified by id
 	 * 
 	 * @param id id of player whose shots to return
 	 * @return JSON response
 	 */
 	public JSONObject playerShots(int id);
+	
+	/**
+	 * Returns the most recent shots for the player specified by username
+	 * 
+	 * @param username player username
+	 * @return JSON response
+	 */
+	public JSONObject playerShots(String username);
 	
 	/**
 	 * Returns the list of followers for a player specified by id
@@ -91,12 +107,28 @@ public interface SlamdunkAPI {
 	public JSONObject playerFollowers(int id);
 	
 	/**
+	 * Returns the list of followers for a player specified by username
+	 * 
+	 * @param username player username
+	 * @return JSON response
+	 */
+	public JSONObject playerFollowers(String username);
+	
+	/**
 	 * Returns the list of players followed by the player specified by id
 	 * 
 	 * @param id player id
 	 * @return JSON response
 	 */
 	public JSONObject playerFollowing(int id);
+	
+	/**
+	 * Returns the list of players followed by the player specified by username
+	 * 
+	 * @param username player username
+	 * @return JSON response
+	 */
+	public JSONObject playerFollowing(String username);
 	
 	/**
 	 * Returns the most recent shots published by those the
@@ -106,6 +138,15 @@ public interface SlamdunkAPI {
 	 * @return JSON response
 	 */
 	public JSONObject playerShotsFollowing(int id);
+	
+	/**
+	 * Returns the most recent shots published by those the
+	 * player specified by username is following
+	 * 
+	 * @param username player username
+	 * @return JSON response
+	 */
+	public JSONObject playerShotsFollowing(String username);
 
 	/**
 	 * Returns shots liked by the player specified by id
@@ -116,12 +157,28 @@ public interface SlamdunkAPI {
 	public JSONObject playerShotsLikes(int id);
 	
 	/**
+	 * Returns shots liked by the player specified by username
+	 * 
+	 * @param username player username
+	 * @return JSON response
+	 */
+	public JSONObject playerShotsLikes(String username);
+	
+	/**
 	 * Returns the list of players drafted by the player specified by id
 	 * 
 	 * @param id player id
 	 * @return JSON response
 	 */
 	public JSONObject playerDraftees(int id);
+	
+	/**
+	 * Returns the list of players drafted by the player specified by username
+	 * 
+	 * @param username player username
+	 * @return JSON response
+	 */
+	public JSONObject playerDraftees(String username);
 	
 	// TODO: helper method to return a list of all endpoints
 	

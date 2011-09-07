@@ -28,8 +28,18 @@ public class SlamdunkAPIClient implements SlamdunkAPI {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public JSONObject player(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	public JSONObject playerShots(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public JSONObject playerShots(String username) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -38,8 +48,18 @@ public class SlamdunkAPIClient implements SlamdunkAPI {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public JSONObject playerFollowers(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	public JSONObject playerFollowing(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public JSONObject playerFollowing(String username) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -48,13 +68,28 @@ public class SlamdunkAPIClient implements SlamdunkAPI {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public JSONObject playerShotsFollowing(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	public JSONObject playerShotsLikes(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	public JSONObject playerShotsLikes(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	public JSONObject playerDraftees(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public JSONObject playerDraftees(String username) {
 		// TODO Auto-generated method stub
 		return null;
 	}
