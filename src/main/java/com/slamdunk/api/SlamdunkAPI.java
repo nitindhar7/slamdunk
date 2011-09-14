@@ -1,5 +1,7 @@
 package com.slamdunk.api;
 
+import java.util.Map;
+
 import org.json.JSONObject;
 
 public interface SlamdunkAPI {
@@ -11,26 +13,6 @@ public interface SlamdunkAPI {
 	 * Exceeding the limit will result in "access denied" errors.
 	 */
 	public int RATE_LIMIT = 60;
-	
-	/**
-	 * All calls should be made using http://api.dribbble.com/
-	 */
-	public String BASE_URI = "http://api.dribbble.com/";
-	
-	/**
-	 * ENDPOINTS
-	 */
-	public String SHOTS_URI = "shots/?";
-	public String SHOTS_REBOUNDS_URI = "shots/?/rebounds";
-	public String SHOTS_LIST_URI = "shots/?";
-	public String PLAYERS_SHOTS_URI = "players/?/shots";
-	public String PLAYERS_SHOTS_FOLLOWING_URI = "players/?/shots/following";
-	public String PLAYERS_SHOTS_LIKES_URI = "players/?/shots/likes";
-	public String PLAYERS_URI = "players/?";
-	public String PLAYERS_FOLLOWERS_URI = "players/?/followers";
-	public String PLAYERS_FOLLOWING_URI = "players/?/following";
-	public String PLAYERS_DRAFTEES_URI = "players/?/draftees";
-	public String SHOTS_COMMENTS_URI = "shots/?/comments";
 	
 	/**
 	 * Returns details for a shot specified by id
@@ -73,13 +55,6 @@ public interface SlamdunkAPI {
 	 * @return JSON response
 	 */
 	public JSONObject player(int id);
-	
-	/**
-	 * Returns profile details for a player specified by username
-	 * 
-	 * @param username player username
-	 * @return JSON response
-	 */
 	public JSONObject player(String username);
 	
 	/**
@@ -89,13 +64,6 @@ public interface SlamdunkAPI {
 	 * @return JSON response
 	 */
 	public JSONObject playerShots(int id);
-	
-	/**
-	 * Returns the most recent shots for the player specified by username
-	 * 
-	 * @param username player username
-	 * @return JSON response
-	 */
 	public JSONObject playerShots(String username);
 	
 	/**
@@ -105,13 +73,6 @@ public interface SlamdunkAPI {
 	 * @return JSON response
 	 */
 	public JSONObject playerFollowers(int id);
-	
-	/**
-	 * Returns the list of followers for a player specified by username
-	 * 
-	 * @param username player username
-	 * @return JSON response
-	 */
 	public JSONObject playerFollowers(String username);
 	
 	/**
@@ -121,13 +82,6 @@ public interface SlamdunkAPI {
 	 * @return JSON response
 	 */
 	public JSONObject playerFollowing(int id);
-	
-	/**
-	 * Returns the list of players followed by the player specified by username
-	 * 
-	 * @param username player username
-	 * @return JSON response
-	 */
 	public JSONObject playerFollowing(String username);
 	
 	/**
@@ -138,14 +92,6 @@ public interface SlamdunkAPI {
 	 * @return JSON response
 	 */
 	public JSONObject playerShotsFollowing(int id);
-	
-	/**
-	 * Returns the most recent shots published by those the
-	 * player specified by username is following
-	 * 
-	 * @param username player username
-	 * @return JSON response
-	 */
 	public JSONObject playerShotsFollowing(String username);
 
 	/**
@@ -155,13 +101,6 @@ public interface SlamdunkAPI {
 	 * @return JSON response
 	 */
 	public JSONObject playerShotsLikes(int id);
-	
-	/**
-	 * Returns shots liked by the player specified by username
-	 * 
-	 * @param username player username
-	 * @return JSON response
-	 */
 	public JSONObject playerShotsLikes(String username);
 	
 	/**
@@ -171,15 +110,12 @@ public interface SlamdunkAPI {
 	 * @return JSON response
 	 */
 	public JSONObject playerDraftees(int id);
-	
-	/**
-	 * Returns the list of players drafted by the player specified by username
-	 * 
-	 * @param username player username
-	 * @return JSON response
-	 */
 	public JSONObject playerDraftees(String username);
 	
-	// TODO: helper method to return a list of all endpoints
+	/**
+     * Returns a map containing the name of the endpoint and its URI
+     * @return A map of endpoint name and uri
+     */
+    public Map<String,String> getEndpointsURIs();
 	
 }
