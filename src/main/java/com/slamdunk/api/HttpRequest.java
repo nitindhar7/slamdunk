@@ -16,7 +16,7 @@ public class HttpRequest {
      * with URL parameters
      * 
      * @param requestURI Dribbble URI requested
-     * @param params Map of URL parameters and their values
+     * @param param Parameter to be inserted in the URI
      * @return JSONObject containing a response
      */
     public JSONObject get(String requestURI, String param) {

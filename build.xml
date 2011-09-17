@@ -33,6 +33,7 @@
       <delete dir="${test_classdir}"/>
       <delete dir="${targetdir}"/>
       <delete dir="${distdir}"/>
+      <delete dir="${docdir}"/>
     </target>
 
     <target name="compile" depends="clean, init">
