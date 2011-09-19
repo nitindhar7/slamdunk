@@ -23,8 +23,9 @@ To begin, build Slamdunk and import it in your code.
     // Shot rebounds
     slamdunk.shotRebounds(SHOT_ID);
     
-    // Player details
+    // Player details by id OR username
     slamdunk.player(PLAYER_ID)
+    slamdunk.player(USERNAME)
 
     // Players followers
     slamdunk.playerFollowers(PLAYER_ID);
